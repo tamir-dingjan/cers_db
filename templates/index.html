@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Text Entry App</title>
+    <title>Assay Entry App</title>
 </head>
 <body>
-    <h1>Text Entry App</h1>
+    <h1>Assay Entry App</h1>
     
     <form method="POST">
         <label for="name">Enter Your Name:</label>
@@ -16,10 +16,10 @@
         <button type="submit">Submit</button>
     </form>
     
-    <h2>Text Entries:</h2>
+    <h2>Assay Entries:</h2>
     <ul>
         {% for entry in text_entries %}
-        <li>{{ entry.name }}: {{ entry.text }}</li>
+        <li>{{ entry.name }}: {{ entry.activity }}</li>
         {% endfor %}
     </ul>
 </body>
