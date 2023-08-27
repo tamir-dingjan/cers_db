@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Text Entry App</title>
+</head>
+<body>
+    <h1>Text Entry App</h1>
+    
+    <form method="POST">
+        <label for="name">Enter Your Name:</label>
+        <input type="text" name="name" id="name" required>
+        <br>
+        <label for="text">Enter Text:</label>
+        <input type="text" name="text" id="text" required>
+        <br>
+        <button type="submit">Submit</button>
+    </form>
+    
+    <h2>Text Entries:</h2>
+    <ul>
+        {% for entry in text_entries %}
+        <li>{{ entry.name }}: {{ entry.text }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
